@@ -1,0 +1,16 @@
+(defun greet (name)
+  (format t "Hello, ~a!~%" name)
+)
+(defun add (x y)
+  (+ x y)
+)
+(defun factorial (n)
+  (if (= n 0)
+      1
+      (* n (factorial (- n 1)))
+  )
+)
+(defun square (x)
+  (* x x)
+)
+(defn square (x) (* x x)) ;; تعريف غير متوافق مع القاعدة
